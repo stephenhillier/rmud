@@ -5,5 +5,15 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[[test]]
+name = "tests"
+path = "tests/main.rs"
+harness = false
+
 [dependencies]
 diesel = { version = "2.0.2", features = ["postgres"] }
+dotenv = "0.15.0"
+knuffel = "2.0.0"
+serde = { version = "1.0.155", features = ["derive"] }
+serde_yaml = "0.9.19"
+url = "2.3.1"

@@ -1,3 +1,5 @@
 -- This file should undo anything in `up.sql`
-drop table character;
-drop table room;
+drop table characters;
+drop table players;
+drop table exits;
+drop table rooms;

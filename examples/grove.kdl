@@ -1,0 +1,62 @@
+title "Mystic Grove"
+items {
+    item {
+        id "snail_carapace"
+        name "snail carapace"
+        rarity "common"
+        type "wearable"
+        armor_class "heavy"
+        slot "chest"
+        armor 3
+      }
+  }
+mobs {
+    mob {
+        id "giant_snail"
+        name "A giant snail"
+        str 2
+        con 2
+        int 1
+        dex 1
+        wis 1
+        att 1
+        def 2
+      }
+  }
+rooms {
+    room {
+        id "meadow"
+        title "A meadow in the forest"
+        desc "You stand in the middle of a small meadow, surrounded by large oak trees
+        on all sides.  The air is cool and damp, and a fog hangs over the woods around you.
+        Other than the occasional cry of a raven, the forest is quiet, and you wonder
+        if the crackle of twigs and leaves under your footsteps might draw attention.
+        A path leads north into the woods."
+      }
+    room {
+        id "path_1"
+        title "A path among oaks"
+        desc "You walk along a path between oak trees.  The trail is well worn
+        but the forest off the beaten path is wild and overgrown with moss and nettles.
+        You see a small clearing to the north, while to the south, the trail leads out 
+        toward a meadow."
+        exits {
+            n to="path_2"
+            s to="meadow"
+          }
+      }
+    room {
+        id "path_2"
+        title "A cabin"
+        desc "You arrive at a small clearing with a log cabin to the east. You see a thin
+        wisp of smoke rising from the chimney. A crude fence outlines a simple garden,
+        but you don't see anything growing. The path leads back into the woods to the north
+        and south."
+        exits {
+            e to="cabin"
+            s to="path_1"
+            s to="path_3"
+          }
+      }
+
+  }
